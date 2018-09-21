@@ -1,0 +1,76 @@
+.l-about-us{
+
+	width: 100%;
+	min-height: 570px;
+	position: relative;
+
+	// .about-us-bg {
+	// 	min-height: 570px;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	background-image: url('../../images/about-us-bg.png');
+	// 	background-size: cover;
+	// 	position: absolute;
+
+	// }
+
+	.about-left-content-panel{
+		width: 100%;
+		min-height: 425px;
+		margin-top: 72.5px;
+		margin-bottom: 30px;
+
+		>* h2 {
+			vertical-align: middle;
+			color: @white;
+			padding-top: 120px;
+		}
+
+		.joiner-box {
+			width: 99%;
+			max-width: 250px;
+			min-height: 400px;
+			background: @white; 
+
+			&__name {
+				color: @brand-primary;
+				padding-left: 10px;
+			}
+			&__title {
+				padding-left: 10px;
+			}
+		}
+
+	}
+
+	.about-right-content-panel{
+		width: 80%;
+		min-height: 425px;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 72.5px;
+		margin-bottom: 30px;
+		padding: 30px;
+		background: @white;
+
+		>p {
+			i {
+				color: @brand-primary;
+				font-size: 3em;
+			}
+		}
+
+		ul {
+			color: @brand-primary;
+
+			>* p {
+				color: @black;
+
+				>* span {
+					font-weight: @bold;
+				}
+			}
+		}
+
+	}
+}

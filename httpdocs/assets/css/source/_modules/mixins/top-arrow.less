@@ -1,0 +1,59 @@
+
+
+  /* Transparent Arrow */
+
+  .make_black {
+    background-color: #000;
+    height: 100px;
+    width: 100%;
+    z-index: 999;
+  }
+
+    .transparent_arrow:before,
+    .transparent_arrow:after {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        width: 50%;
+        padding-bottom: inherit;
+        background-color: inherit;
+        /* -webkit-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.3);
+        -moz-box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.3);
+        box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.3); */
+        -webkit-box-shadow: inset 0 10px 5px -10px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: inset 0 10px 5px -10px rgba(0, 0, 0, 0.25);
+        box-shadow: inset 0 10px 5px -10px rgba(0, 0, 0, 0.25);
+	
+	
+    }
+
+    .transparent_arrow:before {
+        right: 50%;
+        -ms-transform-origin: 100% 100%;
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        -ms-transform: skewX(45deg);
+        -webkit-transform: skewX(45deg);
+        transform: skewX(45deg);
+    }
+
+    .transparent_arrow:after {
+        left: 50%;
+        -ms-transform-origin: 0 100%;
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+        -ms-transform: skewX(-45deg);
+        -webkit-transform: skewX(-45deg);
+        transform: skewX(-45deg);
+    }
+
+
+    @media screen and (max-width: 479px) {
+        .transparent_arrow {
+            position: absolute;
+            bottom: -13px;
+            width: 100%;
+            padding-bottom: 12px;
+       
+        }
+    }

@@ -1,0 +1,71 @@
+//
+//
+// Textbox styles here
+//
+//
+//
+
+
+
+.input-search-cover {
+    position: relative;
+
+    >i {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        color: @dark-gray;
+    }
+}
+
+input.form-control {
+    padding: 20px 8px; 
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+input.jobRoles {
+    padding: 20px 8px; 
+    //max-width: 186px;
+    width: 100%;
+    border: 2px solid @border-color;
+    .text-center();
+   
+    
+}
+
+input.base-salary-textbox {
+    padding: 8px;
+    // max-width: 190px;
+    width: 100%;
+    border: 2px solid @border-color;
+
+    &:active, &:hover {
+    	outline: 0;
+    }
+   
+}
+
+
+@media (max-width: @screen-md-max) {
+
+    input.find-a-job {
+        width: 25%;
+        min-width: 190px;
+    }
+
+    input.jobRoles {
+    margin-bottom: 10px;
+    
+    }
+
+	.select-down-icon {
+
+		>select {
+			margin-bottom: 20px;
+
+		}
+	}
+
+}

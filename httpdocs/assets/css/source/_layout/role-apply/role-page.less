@@ -1,0 +1,74 @@
+.l-role-page {
+	width: 100%;
+	height: auto;
+
+
+	.page-top-buttons {
+		padding: 30px 0px;
+		margin-bottom: 10px;
+		border-bottom: @border-bottom-dark-gray;
+
+			.back-btn-cover {
+			float: left;
+		}
+
+			.apply-btn-cover {
+			float: right;
+		}
+
+	}
+
+
+	.role-page-panel {
+		> .page-title {
+
+			padding-bottom: 20px;
+		}
+
+		> a  {
+			margin: 30px 0px;
+		}
+	}
+}
+
+
+.l-role-related-jobs {
+	width: 100%;
+	height: auto;
+	border-bottom: @border-bottom-dark-gray;
+}
+
+
+
+.sidebar-job-details-panel {
+	width: 100%;
+	height: auto;
+	padding: 20px 0px;
+
+	>p span {
+		font-weight: @bold;
+	}
+}
+
+
+
+// Mobile 
+
+
+@media (max-width: @screen-xs-max) {
+
+	.l-role-page {
+	
+        .page-top-buttons {
+
+				.back-btn-cover, .apply-btn-cover {
+				float: none;
+				.text-center();
+				margin-bottom: 10px;
+				}
+		}
+	}
+	
+
+
+}

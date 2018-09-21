@@ -1,0 +1,306 @@
+.l-salary-checker-graph {
+
+	width: 100%;
+	height: auto;
+	background-color: @section-bg-gray;
+	border-top:2px solid @dark-gray;
+	padding-top:3em;
+	padding-bottom:6em;
+
+} // l-salary-checker-graph
+
+
+.graph {
+	margin-top:3em;
+	font-family:@roboto-font;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// graph header layout
+
+	.graph__head {
+		padding-bottom:1em;
+		border-bottom:2px solid @dark-gray;
+		.clearfix;
+	}
+
+	
+	// mobile
+	@media (max-width: @screen-sm-max) {
+		
+		.graph__head {
+			display:none;
+		}
+	}
+
+
+
+
+// header and body column layout
+
+	.graph__body__column,
+	.graph__head__column {
+		float:left;
+		min-height:1px;
+	}
+
+	// mobile
+	@media (max-width: @screen-sm-max) {
+
+		.graph__body {
+			&__name, &__graph {
+				width:70%;
+			}
+
+			&__salary, &__change {
+				width:30%;
+			}
+		}
+	}
+
+	// desktop
+	@media (min-width: @screen-md) {
+
+		.graph__head, .graph__body {
+
+			&__name {
+				width:25%;
+			}
+
+			&__salary {
+				width:15%;
+			}
+
+			&__graph {
+				width:45%;
+			}
+
+			&__change {
+				width:15%;
+			}
+		}
+	}
+
+	
+
+
+// graph body layout
+
+	.graph__body {
+
+	}
+
+	.graph__body-items {
+		margin:0; padding:0;
+		padding-top:0.8em;
+
+		li {
+			list-style-type: none;
+		}
+	}
+
+	.graph__body-item {
+		margin-top:0.8em;
+		padding-bottom:0.8em;
+		.clearfix;
+	}
+
+	.graph__body__mobile-title {
+		font-size:0.92em;
+		margin-bottom:0.5em;
+	}
+
+	.graph__body__change__text {
+		i.glyph {
+			position:relative;
+			top:4px;
+			margin-right:8px;
+		}
+
+		i.icon-pagination_solid {
+			font-size:4px;
+			top:-3px;
+		}
+	}
+
+	// mobile
+	@media (max-width: @screen-sm-max) {
+
+		.graph__body-item {
+			border-bottom:1px solid @dark-gray;
+		}
+
+		.graph__body__column {
+			margin-bottom:0.8em;
+		}
+
+		.graph__body__graph {
+			margin-bottom:1.4em;
+		}
+
+		.graph__body__salary__text,
+		.graph__body__name__text {
+			font-size:1.33em;
+		}
+
+		// change the change text size
+		.graph__body__change__text {
+			font-size:1em;
+		}
+
+		// align salary and change to the right
+		.graph__body__salary {
+			.graph__body__mobile-title,
+			.graph__body__salary__text {
+				text-align:right;
+			}
+		}
+
+		.graph__body__change {
+			.graph__body__change__text {
+				text-align:right;
+			}
+		}
+	}
+
+	// desktop
+	@media (min-width: @screen-md) {
+
+		.graph__body__mobile-title {
+			display:none;
+		}
+	}
+
+
+// range list
+
+	.graph__range-items {
+
+		// reset ul
+		margin:0; padding:0; 
+
+		margin-right:10%;
+		position:relative;
+		left:0.6em;
+		width:100%;
+		margin-left:-10%;
+
+		.clearfix;
+
+		li {
+			list-style-type: none;
+		}
+
+		.graph__range-item {
+			float:left;
+			width:11%;
+			text-align:right;
+		}
+	}
+
+
+
+// graph bar
+
+	.graph-bar {
+		width:90%;
+		position:relative;
+	}
+
+	.graph-bar--large {
+		padding:100px 0;
+		width:100%;
+	}
+
+	.graph-bar__bar {
+		height:1.4em;
+		background-color:@brand-primary;
+		min-width:4px;
+		position:relative;
+
+		// notches
+		&:before, &:after {
+			content: '';
+			position:absolute;
+			top:100%;
+			height:3px;
+			width:1px;
+			background-color: @gray;
+		}
+
+		&:before {
+			left:0;
+		}
+
+		&:after {
+			right:0;
+		}
+	}
+
+	.graph-bar__average,
+	.graph-bar__your-salary {
+		width:2px;
+		height:120%;
+		background:@gray;
+		position:absolute;
+		top:-10%;
+
+		&--large {
+			height:auto;
+		}
+
+		span {
+			margin-left:0.7em;
+			display:block;
+			width:10em;
+		}
+	}
+
+	.graph-bar__your-salary {
+		background:@brand-mid-green;
+	}
+
+	// large variants
+
+	.graph-bar__your-salary--large {
+		top:auto;
+		bottom:-10%;
+		padding-bottom:2.5em;
+	}
+
+	.graph-bar__average--large {
+		padding-top:2.5em;
+	}
+
+
+
+	.graph-bar__low, .graph-bar__high {
+		font-size:10px;
+		position:absolute;
+		top:100%;
+		margin-top:5px;
+	}
+
+	.graph-bar__low {
+		left:0%;
+		
+	}
+
+	.graph-bar__high {
+		left:100%;
+	}
+
+	.graph-bar__high.hang-left {
+		left:auto;
+		right:0%;
+	}
+
+	// mobile
+	@media (max-width: @screen-sm-max) {
+
+		.graph-bar__bar {
+			height:1em;
+		}
+
+	}

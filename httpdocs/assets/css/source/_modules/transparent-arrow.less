@@ -1,0 +1,44 @@
+//
+// Transparent arrow after a section
+//
+//
+
+
+
+.about-arrow {
+ 	height: 20px;
+ 	width: 100%;
+ 	position: relative;
+ }
+.about-arrow:after {
+	bottom: -50px;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: @white;
+    border-width: 25px;
+    margin-left: -20px;
+    z-index: 199;
+}
+
+
+.cd-label {
+    height: 24px;
+    width: 140px;
+    position: relative;
+    background: @brand-primary;
+}
+.cd-label:after{
+    left: 100%;
+    top: 30%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}

@@ -1,0 +1,59 @@
+/**************************** Bottom menu styles here **************************************/
+
+.top-sub-menu-cover {
+width: 100%;
+height: auto;
+background: black;
+
+}
+
+
+.top-sub-menu {
+  background-color: @light-green;
+  padding: 0em 5em;
+  float: right;
+
+
+  &__row {
+      padding: 0px;
+      margin: 0px;
+      line-height: 40px;
+      
+  }
+
+  &__list {
+    padding: 0px;
+      margin: 0px;
+      list-style: none;
+      float: left;
+      display: inline-block;
+     
+    }
+
+    &__link {
+
+       text-decoration: none;
+       padding: 12px 18px;
+       font-family: "Futura", sans-serif, Arial;
+       font-size: 0.9em;
+
+       &:hover, &.active {
+        background: @sub-menu-hover-bg;
+       }
+
+    }
+}
+
+/**************************** Bottom menu completed **************************************/
+
+
+// mobile 
+
+@media (max-width: @screen-xs-max) {
+
+    .top-sub-menu {
+      
+    }
+
+
+}

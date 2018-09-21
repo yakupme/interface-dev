@@ -1,0 +1,94 @@
+.l-find-total-job {
+	width: 100%;
+	height: 40px;
+	background: @brand-primary;
+	color: @white;
+	position: relative;
+
+	.total-find-job-content {
+		.text-center();
+		vertical-align: middle;
+		padding: 8px 0px;
+	}
+}
+
+
+
+.l-search-result-job-list {
+
+
+	.search-result-job-box {
+		width: 100%;
+		height: auto;
+		border-bottom:@border-bottom-gray;
+		padding: 30px 0px;
+		line-height: 1.8;
+
+
+		&__title {
+			
+			.text-left();
+			padding: 5px 0px;
+
+			 a {
+				font-size: 1.2em;
+				font-weight: @semibold;
+				font-family: @roboto-font;
+				i {
+					color: @brand-primary;
+					padding-left: 10px;
+					font-size: 1em;
+
+					&:hover {
+						color: @brand-secondary;
+					}
+				}
+				
+			}
+		} // title
+
+		&__salary, &__region, &__area-of-job {
+
+			p {
+				//border-right: @border-bottom-gray;
+
+				span {
+					font-weight: @bold;
+					padding-right: 10px;
+
+				}
+			}
+		} // salary 
+
+		&__area-of-job {
+			p{
+				border-right: none;
+			}
+		}
+
+
+
+	} // search-result-job-box
+
+} // layout section 
+
+
+
+
+@media (max-width: @screen-xs-max) {
+
+	.l-search-result-job-list {
+
+		.search-result-job-box { 
+			padding: 30px 20px;
+
+		}
+	}
+}
+
+
+
+
+
+
+

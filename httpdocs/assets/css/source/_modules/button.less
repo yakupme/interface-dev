@@ -1,0 +1,107 @@
+//
+//
+// All buttons styles in this page
+//
+//
+//
+
+
+
+.oakleaf-btn {
+    .text-center();
+    max-width: 100%;
+    min-height: 40px;
+    background-color: @color-pink;
+    border-radius: 0px;
+    text-decoration: none !important;
+    font-family: 'Futura', sans-serif, arial;
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 0; // For input.btn
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    white-space: nowrap;
+    display: inline-block;
+    padding-top: 8px;
+
+}
+
+.btn-pink {
+  color: @white !important;
+  background-color: @color-pink;
+  width:100%;
+  
+}
+
+.btn-fixed {
+    width: 190px;
+}
+
+
+
+
+.btn-back {
+  color: @white !important;
+  background-color:@dark-gray;
+  width: 190px;
+}
+
+.btn-pink-lg {
+  color: @white !important;
+  background-color: @color-pink;
+  width: 100%;
+}
+
+.btn-green {
+    background-color: @brand-primary;
+    border: 2px solid @brand-primary;
+    color: @white !important;
+    width: 100%;
+
+    > .icon-search {
+       padding: 5px 8px;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+
+
+.btn-white {
+    background: transparent;
+    border: 2px solid @border-color;
+    width: 100%;
+    color: @black;  
+}
+
+
+.btn-gray {
+    background: transparent;
+    border: 2px solid @news-item-gray;
+    width: 100%;
+    color: @news-item-gray;
+}
+
+@media (max-width: @screen-sm-max) {
+
+    .tablet-right {
+        float: right;
+        margin-right: 24px;
+    }
+}
+
+@media (max-width: @screen-xs-max) {
+
+    .tablet-right {
+        float: none;
+        margin-right: 0px;
+    }
+}
+
+
+

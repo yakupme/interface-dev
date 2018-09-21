@@ -1,0 +1,63 @@
+//
+// Accordion
+//
+//
+
+
+.accordion {
+    font-family:@roboto-font;
+    margin:3em 0;
+}
+
+.accordion__item {
+    margin-bottom:2px;
+}
+
+.accordion__bar {
+    background:@light-green;
+    padding:0.7em 1em;
+
+    font-family:@futura-font;
+    font-size:1.3em;
+    font-weight:light;
+
+    position:relative;
+    padding-right:50px;
+}
+
+.accordion__toggle {
+    position:absolute;
+    top:0; right:0; bottom:0; height:100%;
+    width:40px;
+    
+
+    i {
+        color:@brand-mid-green;
+        font-size:30px;
+
+        position:absolute;
+        top:5px; right:15px;
+    }
+
+    .minus {
+        display:none;
+    }
+}
+
+.accordion__bar {
+
+    cursor:pointer;
+
+    &.is-open {
+        .minus {
+            display:block;
+        }
+        .plus {
+            display:none;
+        }
+    }
+}
+
+.accordion__body {
+    padding:1.5em 1.3em;
+}

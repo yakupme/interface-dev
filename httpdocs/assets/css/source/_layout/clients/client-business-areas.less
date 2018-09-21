@@ -1,0 +1,91 @@
+.l-client-business-areas {
+	width: 100%;
+	min-height: 550px;
+	background-color: @white;
+	position: relative;
+
+	.client-business-areas-bg {
+		background-color: @white;
+		height: 100%;
+		width: 100%;
+		background-image: url('../../images/hr-people-bg.png');
+		background-size: cover;
+		position: absolute;
+	}
+
+	.client-business-areas-content-cover {
+		width: 80%;
+		margin: 10%;
+		margin-top: 60px;
+		min-height: 430px;
+		background-color: @white;
+		padding: 20px 30px;
+
+		h1 {
+			font-weight: @bold;
+		}
+		p {
+			font-family: @roboto-font;
+			font-weight: @light;
+			font-size: 1.2em;
+			padding-top: 10px;
+		}
+	}
+
+	.client-business-areas-slider-cover {
+
+		margin-top: 50px;
+
+		.client-business-box {
+			width: 100%;
+			height: 190px;
+			background-color: @white;
+			position: relative;
+			margin-top: 20px;
+
+			&__icon {
+				position: absolute;
+				top: 10px;
+				left: 20px;
+				color: @brand-primary;
+				font-size: 4em;
+			}
+
+			&__title {
+				position: absolute;
+				bottom: 10px;
+				left: 20px;
+				font-family: @futura-font;
+
+				h4 {
+					font-size: 1.6em;
+				}
+			}
+
+
+		}
+
+	}
+}
+
+
+@media (max-width: @screen-xs-max) {
+
+	.l-client-business-areas {
+	
+	
+		.client-business-areas-slider-cover {
+
+
+			.client-business-box {
+				width: 70%;
+				margin-left: 15%;
+				margin-right: 15%;
+
+			}
+
+		}
+	}
+
+}
+

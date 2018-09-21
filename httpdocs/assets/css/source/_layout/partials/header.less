@@ -1,0 +1,42 @@
+.l-site-header {
+
+	width: 100%;
+	min-height: 100px;
+	height: auto;
+	background-color: @white;
+	position: relative;
+   
+    
+
+	.top-logo-container {
+		margin-top: 15px;
+		
+    }
+
+	.top-menu-container {
+		padding-top:40px;
+		height: auto;
+		width: 100%;
+
+	}	
+}
+
+//Tablet
+
+@media (max-width: @screen-md-max) {
+
+	.top-menu-container {
+		padding-left: 0px !important;
+	}
+}
+
+
+//Mobile
+
+@media (max-width: @screen-xs-max) {
+
+	.top-logo-container {
+		margin-left: 4em;
+		position: absolute;
+	}
+}

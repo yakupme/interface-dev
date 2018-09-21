@@ -1,0 +1,93 @@
+.sidebar-people-box-cover {
+	width: 100%;
+	height: auto;
+	border-bottom: @border-bottom-dark-gray;
+	background: @sidebar-bg;
+	padding: 10px 0px;
+
+
+
+	.sidebar-people-box {
+	width: 100%;
+	min-height: 240px;
+	padding: 20px;
+	margin-top: 25px;
+
+
+			&__contact {
+				font-weight: @bold;
+			}
+
+
+			&__img {
+				
+				> img {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				border:@box-border-light-green;
+				}
+			}
+
+
+			&__name {
+				> p {
+					color: @brand-primary;
+					font-size: 1.2em;
+					padding-top: 5px;
+					font-family: @futura-font;
+				}
+			} // name
+
+			&__email {
+				
+				a {
+					padding-bottom: 3px;
+					font-family: @roboto-font;
+					
+					>i {
+						padding-right: 10px;
+						font-size: .9em;
+
+					}
+				}
+			} // email
+
+			&__phone {
+				
+				a {
+					padding-bottom: 3px;
+					font-family: @roboto-font;
+					>i {
+						padding-right: 12px;
+						font-size: 1em;
+					}
+				}
+			} // email
+
+
+} // our people box
+
+} // layout ends 
+
+
+
+.share-sidebar {
+	margin-top: 30px;
+
+    p {
+		font-weight: @semibold;
+		font-size: 1.3em;
+		font-family: @roboto-font;
+
+		> i {
+			margin-left: 10px;
+			font-size: 1.6em;
+			color: @dark-gray;
+		}
+	}
+}
+
+
+
+

@@ -1,0 +1,69 @@
+.l-home-about {
+	background-color: @brand-primary;
+	min-height: 600px;
+	height: auto;
+	width: 100%;
+	position: relative;
+
+
+
+	.about-bg {
+		min-height: 470px;
+		height: 100%;
+		width: 100%;
+		background-image: url('../../images/hero-img.jpg');
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: 50% 0%;
+		position: absolute;
+	}
+
+	.about-panel {
+	  min-height: 500px;
+	  height: auto;
+	  background-color: @white;
+	  opacity: 0.8;
+	  filter: alpha(opacity=80);
+	  position: relative;
+	  margin: 50px 0px;
+
+	  &__content {
+        padding: 70px 115px;
+	  	opacity: 1;
+	  	.text-center();
+
+	  	> p {
+	  		line-height: 2;
+	  	}
+	  }
+    }
+
+    .remove-opacity{
+    	opacity: 1;
+    	
+    }
+  
+
+
+}
+
+
+@media (max-width: @screen-md-max) {
+
+	.l-about {
+
+		.about-panel {
+		 
+			  &__content {
+		        padding: 50px;
+			  }
+	    }
+
+
+	}
+
+}
+
+
+
+

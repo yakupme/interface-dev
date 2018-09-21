@@ -1,0 +1,83 @@
+.l-hero {
+	min-height: 470px;
+	width: 100%;
+	position: relative;
+	font-family: 'Futura', sans-serif, Arial;
+	font-size: 1em;
+	
+	&__title{
+		padding-top: 100px;
+		color: @white;
+	}
+
+	.hero-bg {
+		background-color: #9dd600;
+		min-height: 470px;
+		width: 100%;
+		background-image: url('../../images/hero-img.jpg');
+		background-size: cover;
+		position: absolute;
+		z-index: -1;
+		
+	}
+
+	
+	.hero-job-search-form-panel {
+		background-color: @job-panel-gray;
+		max-width: 828px; //805
+		min-height: 42px;
+		margin-top: 67px;
+		margin-bottom: 50px;
+		padding: 10px 10px 0px 10px;	
+
+	}
+
+
+}
+
+
+// Small screen
+
+
+@media (max-width: @screen-sm-max) {
+
+	.l-hero {
+		.hero-job-search-form-panel{
+			padding-bottom: 10px;
+		}
+
+	}
+
+
+}
+
+
+
+
+// Mobile screen 
+@media (max-width: @screen-xs-max) {
+
+	.l-hero {
+
+	
+	&__title{
+		padding-top: 20px;
+		text-align: center; 
+		
+	}
+	
+	.hero-job-search-form-panel {
+		max-width: 206px;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		
+
+	}
+} // hero l cover
+
+} // media 
+
+
+

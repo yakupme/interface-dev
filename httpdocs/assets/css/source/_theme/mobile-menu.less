@@ -1,0 +1,102 @@
+/*************** Mobile Menu styles *****************/
+
+
+.mobile-menu-opened {
+  position: absolute;
+  overflow: hidden;;
+  width: 100%;
+  height: 100%;
+}
+
+.top-menu-container {
+	display: block;
+}
+
+
+@media (max-width: @screen-xs-max) {
+
+
+  .mobile-menu-open {
+    position: absolute;
+    bottom: 25px;
+    left: 5px;
+  }
+
+  .hamburger-close-img {
+    top: 15px;
+    right: 15px;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+  }
+  
+ 
+ #menu {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   width: 260px;
+   left: -260px;
+   height: 100%;
+   overflow: visible;
+   z-index: 9999;
+   -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: 0.30s ease;
+  -moz-transition: 0.30s ease;
+  -o-transition: 0.30s ease;
+  transition: 0.30s ease;
+  box-shadow: 15px 0 15px -15px #222;
+}
+
+#menu ul.mobile-nav {
+	padding-top: 63px;
+}
+
+#menu ul.mobile-nav li.top-menu__list {
+	display: block;
+	float: none;
+}
+
+#menu ul.mobile-nav li:first-child {
+	display: block;
+	
+}
+
+#menu ul.mobile-nav > li > a.top-menu__link {
+  background: @white;
+  color: @black;
+  font-size: 1.4em;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+  line-height: 28px;
+  width: 100%;
+  
+}
+
+#menu ul.mobile-nav > li > a:hover, #menu ul.mobile-nav > li > a.active {
+  background: #eff6e6;
+ 
+ }
+
+
+
+/* Nav Icon */
+
+
+
+  
+
+
+	
+
+} // media 
+
+
+
+
+

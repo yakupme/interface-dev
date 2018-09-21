@@ -1,0 +1,132 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+.cd-img-replace {
+  /* replace text with a background-image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+
+
+/* No Touch devices */
+.cd-nav-trigger {
+  display: none;
+}
+
+#timeline-nav {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+#timeline-nav li {
+  text-align: right;
+  list-style-type: none;
+}
+#timeline-nav a {
+  display: inline-block;
+  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#timeline-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#timeline-nav a span {
+  float: right;
+  display: inline-block;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+#timeline-nav a:hover span {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+#timeline-nav a:hover .cd-label,
+#timeline-nav .is-selected .cd-label {
+  opacity: 1;
+  transform: scale(1);
+
+}
+
+#timeline-nav .is-selected .cd-label:after{
+  width: 0; 
+  height: 0; 
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent; 
+  border-left: 6px solid #7fb539;
+}
+
+
+#timeline-nav a.is-selected .cd-dot {
+  background-color:@white;
+  border:1px solid black;
+}
+#timeline-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 8px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: @dark-gray;
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+#timeline-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  padding: 1px 10px;
+  color: @white;
+  background: @brand-primary;
+  font-size: 1em;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+
+
+
+@media (max-width:990px) {
+  #timeline-nav {
+    display:none;
+  }
+}

@@ -1,0 +1,42 @@
+
+/**************************** Anchor links **************************************/
+
+
+a {
+	color:@color-link;
+
+	&:visited {
+	 color: darken(@color-link,10%);	
+	}
+	&:hover {
+	 color: lighten(@color-link,20%);
+	 text-decoration: none;
+	}
+	&:active {
+	 color: lighten(@color-link,10%);
+	}
+}
+
+
+a.green-link {
+	color:@brand-primary;
+	text-decoration: underline;
+
+	&:visited {
+	 color: darken(@brand-primary,10%);	
+	}
+	&:hover {
+	 color: lighten(@brand-primary,20%);
+	 text-decoration: none;
+	}
+	&:active {
+	 color: lighten(@brand-primary,10%);
+	}
+}
+
+
+
+
+
+
+

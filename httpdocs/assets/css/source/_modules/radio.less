@@ -1,0 +1,53 @@
+
+.radio-button-cover {
+  display: block;
+  position: relative;
+  margin: 20px 0;
+  padding-left:40px;
+  font-family: @futura-font;
+
+
+    input[type="radio"] {
+      visibility: hidden;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: 0;
+    }
+
+
+    input[type="radio"] + label span.radio-button-style {
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      z-index: 20;
+      position: absolute;
+      top:-3px;
+      left:0;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      vertical-align: middle;
+      border: 2px solid @dark-gray;
+      background: transparent;
+      background-image: radial-gradient(ellipse at center,  #666666 0%, #666666 40%, transparent 45%);
+      background-repeat: no-repeat;
+      transition: background-position .15s cubic-bezier(.8, 0, 1, 1);
+      font-weight: @light;
+    }
+
+    input[type="radio"]:checked + label span.radio-button-style {
+      transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1);
+    }
+
+    input[type="radio"] + label span.radio-button-style {
+      background-position: -24px 0;
+    }
+    input[type="radio"]:checked + label span.radio-button-style {
+      background-position: 0 0;
+    }
+
+
+} // radio button cover

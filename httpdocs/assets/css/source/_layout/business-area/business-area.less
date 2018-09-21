@@ -1,0 +1,63 @@
+.l-business-area {
+	width: 100%;
+	height: auto;
+	background-color: @white;
+	font-family: @futura-font;
+
+	.business-area-content-panel{
+		width: 100%;
+		height: auto;
+		padding-top: 10px;
+		.text-left();
+
+		&__img {
+			max-width: 100%;
+			height: auto;
+		}
+		&__text {
+			h1{
+				font-family: @futura-font;
+				font-weight: @bold;
+
+				>i {
+					color: @brand-primary;
+				}
+			}
+			p{
+				font-family: @roboto-font;
+			}
+
+			ul.hr-list-styled{
+				color: @brand-primary;
+
+				li {
+					> p {
+						line-height: 1;
+						color: @black;
+					}
+				}
+
+			}
+		} // text
+
+	
+
+	} // business-area-content-panel
+
+
+} // l-business-area
+
+
+
+
+//Mobile 
+
+@media (max-width: @screen-xs-max) {
+
+
+}
+
+
+
+
+

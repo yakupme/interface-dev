@@ -1,0 +1,79 @@
+.l-home-featured-jobs {
+	min-height: 550px;
+	width: 100%;
+	position: relative;
+
+	.featured-jobs-bg {
+		min-height: 470px;
+		height: 100%;
+		width: 100%;
+		background-image: url('../../images/featured-jobs-img.jpg');
+		background-size: cover;
+		background-position: top left;
+		position: absolute;
+	}
+
+	.featured-jobs-lists {
+		height: auto;
+		width: 100%;
+		margin-top: 150px;
+		.text-left();
+
+		.featured-job-box {
+			width: 100%;
+			min-height: 250px;
+			color: @white;
+			padding: 20px;
+
+		
+			&__title {
+				font-weight: bold;
+				font-family: 'Futura', sans-serif, arial;
+			}
+
+			&__salary {
+				font-weight: 200;
+			}
+
+			&__area {
+				padding-top: 20px;
+			}
+
+		}
+	}// featured job lists
+
+
+	.featured-jobs-panel {
+	  .text-left();
+	  padding: 50px 10px;
+	  background-color: @white;
+	  min-height: 400px;
+	  opacity: 0.8;
+	  margin-top: 5em;
+	  margin-bottom: 1em;
+
+	  &__content {
+        padding: 10px 10px;
+	  	opacity: 1;
+	  	
+
+	  	> p {
+	  		line-height: 2;
+	  	}
+	  }
+    } // featured job panel
+}
+
+
+
+// Mobile
+
+@media (max-width: @screen-xs-max) {
+
+	.l-home-featured-jobs {
+		
+	}
+
+
+}
+

@@ -1,0 +1,56 @@
+.l-oakleaf-stories {
+	width: 100%;
+	min-height: 500px;
+	padding: 25px 0px;
+
+	.career-stories-cover {
+		padding: 0px 50px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.oakleaf-stories-slider {
+		height: auto;
+		width: 100%;
+		.text-left();
+
+		.oakleaf-stories-box {
+			width: 100%;
+			height: auto;
+			padding: 20px;
+			position: relative;
+	
+			&__person {
+
+				> img {
+					height: 100px;
+					width: 100px;
+					border: @box-border-light-green;
+					border-radius: 50%;
+					display: inline-block; 
+					float: left;
+					}
+
+				> p {
+						margin-left: 120px;
+						padding-top: 10px;
+					}
+
+			}
+			&__content {
+				font-family: @roboto-font;
+				font-weight: @light;
+			}
+
+		}
+	}// featured job lists
+}
+
+@media (max-width: @screen-xs-max){
+	
+	.oakleaf-stories-box {
+		width: 80%;
+		margin-left: 8%;
+		margin-right: 12%;
+	}
+}

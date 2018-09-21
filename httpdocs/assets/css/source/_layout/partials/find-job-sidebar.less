@@ -1,0 +1,95 @@
+.l-find-a-job-sidebar{
+	height: auto;
+	width: 100%;
+	background-color: @section-bg-gray;
+	margin-top: 16px;
+	font-family: @futura-font;
+
+
+	.find-a-job-header {
+		
+		>h2 {
+			padding-left: 30px;
+		}
+	}
+
+
+	> form {
+
+		padding: 30px;
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+
+
+		input[type=text]{
+			.text-center();
+			color: @black;
+			padding: 18px 8px; 
+			border: 2px solid @border-color;
+			width: 100%;
+		}
+
+		.form-group, .form-inline {
+			margin-top: 10px;
+		}
+
+		.select-down-icon, .btn-pink {
+
+			max-width: 100%;
+			
+		}
+
+		select.from-to {
+			text-indent: 15px;
+			
+		}
+
+		.from-to-first{
+
+			//margin-right: 2px;
+			
+		}
+
+
+
+
+
+	}// forms
+
+
+} // l find a job
+
+
+//tablet
+
+
+@media (max-width: @screen-sm-max) {
+
+	> form {
+		
+		.from-to-first{
+
+			margin-right: 0px;
+			
+		}
+	}
+
+}
+
+
+//Mobile 
+
+
+@media (max-width: @screen-xs-max) {
+
+	> form {
+		.form-group {
+			padding: 20px;
+		}
+	}
+
+}
+
+
+
